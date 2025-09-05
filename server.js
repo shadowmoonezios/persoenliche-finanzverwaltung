@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/persoenliche_finanzverwaltung', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/personal_financial_management', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB verbunden'))
     .catch(err => console.error(err));
 
